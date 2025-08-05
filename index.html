@@ -21,8 +21,55 @@
             
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" required pattern="[0-9+\-\s\(\)]+">
-
+            
         </fieldset>
+        
+        <!-- Ticket & Workshops Section -->
+        <fieldset>
+            <legend>Ticket & Workshops</legend>
+            
+            <label for="ticket-type">Ticket Type</label>
+            <select id="ticket-type" name="ticketType" required>
+                <option value="">Choose ticket type</option>
+                <option value="standard">Standard</option>
+                <option value="vip">VIP</option>
+                <option value="student">Student</option>
+            </select>
+            
+            <fieldset>
+                <legend>Workshops</legend>
+                
+                <input type="checkbox" id="workshop-performance" name="workshops" value="performance">
+                <label for="workshop-performance">Web Performance</label>
+                
+                <input type="checkbox" id="workshop-accessibility" name="workshops" value="accessibility">
+                <label for="workshop-accessibility">Accessibility</label>
+                
+                <input type="checkbox" id="workshop-testing" name="workshops" value="testing">
+                <label for="workshop-testing">Testing</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dietary Requirements</legend>
+                
+                <input type="radio" id="diet-none" name="diet" value="none" checked>
+                <label for="diet-none">None</label>
+                
+                <input type="radio" id="diet-vegan" name="diet" value="vegan">
+                <label for="diet-vegan">Vegan</label>
+                
+                <input type="radio" id="diet-kosher" name="diet" value="kosher">
+                <label for="diet-kosher">Kosher</label>
+                
+                <input type="radio" id="diet-halal" name="diet" value="halal">
+                <label for="diet-halal">Halal</label>
+                
+                <input type="radio" id="diet-other" name="diet" value="other">
+                <label for="diet-other">Other</label>
+            </fieldset>
+            
+        </fieldset>
+
     </form>
 </body>
 </html>

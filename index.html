@@ -70,6 +70,20 @@
             
         </fieldset>
 
+        <!-- Payment Details Section -->
+        <fieldset>
+            <legend>Payment Details</legend>
+            
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="cardNumber" required pattern="[0-9\s]{13,23}">
+            
+            <label for="expiry-date">Expiry Date</label>
+            <input type="month" id="expiry-date" name="expiryDate" required>
+            
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" required pattern="[0-9]{3,4}">
+            
+        </fieldset>
     </form>
 </body>
 </html>
